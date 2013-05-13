@@ -1,6 +1,6 @@
 package com.promindis.jdk8;
 
-public class IterateString {
+public final class IterateString {
   private static void printChar(int aChar) {
     System.out.println((char)(aChar));
   }
