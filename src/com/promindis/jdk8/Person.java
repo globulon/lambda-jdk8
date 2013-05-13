@@ -9,6 +9,10 @@ public final class Person {
     this.age = age;
   }
 
+  public int compareName(final Person other) {
+    return name.compareTo(other.name);
+  }
+
   public int ageDifference(final Person other) { return age - other.age; }
 
   @Override

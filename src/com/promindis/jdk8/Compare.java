@@ -1,6 +1,7 @@
 package com.promindis.jdk8;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -34,6 +35,29 @@ public final class Compare {
     printPeople(
       "Sorted in ascending order of age:",
       people.stream().sorted(Person::ageDifference).collect(toList()));
+
+    final Comparator<Person> compareAsc = Person::ageDifference;
+    final Comparator<Person> compareDesc = compareAsc.reverseOrder();
+
+    printPeople(
+      "Sorted in ascending order of age:",
+      people.stream().sorted(compareAsc).collect(toList()));
+
+    printPeople(
+      "Sorted in descending order of age:",
+      people.stream().sorted(compareDesc).collect(toList()));
+
+    final Comparator<Person> compareAscName = Person::compareName;
+    final Comparator<Person> compareDescName = compareAscName.reverseOrder();
+
+    printPeople(
+      "Sorted in descending order of name:",
+      people.stream().sorted(compareAscName).collect(toList()));
+
+    printPeople(
+      "Sorted in descending order of name:",
+      people.stream().sorted(compareDescName).collect(toList()));
+
   }
 
 }
