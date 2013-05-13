@@ -13,6 +13,15 @@ public final class Person {
     return name.compareTo(other.name);
   }
 
+  public String name() {
+    return name;
+  }
+
+  public int age() {
+    return age;
+  }
+
+
   public int ageDifference(final Person other) { return age - other.age; }
 
   @Override
