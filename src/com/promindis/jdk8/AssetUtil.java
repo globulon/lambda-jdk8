@@ -17,7 +17,6 @@ public final class AssetUtil extends Assets implements Runnable {
     System.out.println("Total of all assets: " + totalAssetValues(assets));
     System.out.println("Total of all bonds: " + totalBondValue(assets));
     System.out.println("Total of all stocks: " + totalStockValue(assets));
-
   }
 
   public static void main(final String[] args) {
