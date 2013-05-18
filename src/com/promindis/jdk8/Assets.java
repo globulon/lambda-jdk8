@@ -1,12 +1,13 @@
 package com.promindis.jdk8;
 
 import java.math.BigDecimal;
-import static java.math.BigDecimal.ZERO;
-
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import static com.promindis.jdk8.Asset.AssetType.*;
+
+import static com.promindis.jdk8.Asset.AssetType.BOND;
+import static com.promindis.jdk8.Asset.AssetType.STOCK;
+import static java.math.BigDecimal.ZERO;
 
 public abstract class Assets {
   private Predicate<Asset> all = asset -> true;

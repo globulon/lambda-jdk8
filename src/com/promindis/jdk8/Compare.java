@@ -3,14 +3,17 @@ package com.promindis.jdk8;
 import java.util.Arrays;
 import java.util.Comparators;
 import java.util.List;
-import java.util.function.Consumer;
-import static com.promindis.jdk8.People.*;
-import com.promindis.jdk8.Messages.*;
-import static java.util.stream.Collectors.toList;
-import java.util.Comparators.*;
 
-public final class Compare implements People, Messages {
+import static java.util.stream.Collectors.toList;
+
+public final class Compare extends People implements Messages, Runnable {
+
   public static void main(final String[] args) {
+    new Compare().run();
+  }
+
+  @Override
+  public void run() {
     final List<Person> people = Arrays.asList(
       new Person("John", 20),
       new Person("Sara", 21),

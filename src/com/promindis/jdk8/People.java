@@ -7,14 +7,14 @@ import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
-public interface People {
+public abstract class  People {
 
-  static void printPeople(final String message, final Stream<Person> s) {
+  void printPeople(final String message, final Stream<Person> s) {
     out.println(message);
     s.forEach(out::println);
   }
 
-  static void printPeople(final String message, final List<? super Person> s) {
+  void printPeople(final String message, final List<? super Person> s) {
     out.println(message);
     s.forEach(out::println);
   }

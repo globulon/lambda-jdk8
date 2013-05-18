@@ -2,7 +2,8 @@ package com.promindis.jdk8;
 
 import java.awt.*;
 import java.util.function.Consumer;
-import static com.promindis.jdk8.Camera.*;
+
+import static com.promindis.jdk8.Camera.makeCamera;
 
 public final class UseCamera {
   private UseCamera() {

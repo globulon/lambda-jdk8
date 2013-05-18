@@ -2,7 +2,8 @@ package com.promindis.jdk8;
 
 import java.util.function.Consumer;
 import java.util.stream.Stream;
-import static java.lang.System.*;
+
+import static java.lang.System.out;
 
 public interface Messages {
 

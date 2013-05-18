@@ -1,9 +1,6 @@
 package com.promindis.jdk8;
 
-import com.sun.istack.internal.NotNull;
-
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

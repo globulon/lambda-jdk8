@@ -9,11 +9,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.DosFileAttributes;
 import java.util.Arrays;
 import java.util.function.BiPredicate;
-import java.util.function.Consumer;
 import java.util.stream.CloseableStream;
 
 import static java.nio.file.Files.newDirectoryStream;
-import com.promindis.jdk8.Messages.*;
 
 public final class ListFiles implements Messages {
 
