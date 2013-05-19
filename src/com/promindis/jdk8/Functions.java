@@ -2,12 +2,17 @@ package com.promindis.jdk8;
 
 import java.util.function.Function;
 
-public final class Functions {
+public class Functions {
 
-  private Functions() {
-    super();
+  static  <T> Function<T, T> identity() { return t -> t; }
+
+  @FunctionalInterface
+  public interface UseInstance<T, X extends Throwable> {
+    void accept(T instance) throws X;
   }
 
-  public static <T> Function<T, T> identity() { return t -> t; }
-
+  @FunctionalInterface
+  public interface Invoke<U, R, X extends Throwable> {
+    R apply(final U u) throws X;
+  }
 }

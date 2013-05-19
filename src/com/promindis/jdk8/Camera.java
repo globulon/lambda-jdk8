@@ -24,4 +24,5 @@ public final class Camera {
 
     return new Camera(filter);
   }
+
 }

@@ -16,6 +16,12 @@ public final class Transports implements Flies, Transport, Runnable {
 
   @Override
   public void run() {
+    SeaPlane seaPlane = seaPlane();
+    seaPlane.takeOff();
+    seaPlane.turn();
+    seaPlane.cruise();
+    seaPlane.land();
+
     seaPlane().cruise();
     goUp(5, seaPlane()).cruise();
   }
